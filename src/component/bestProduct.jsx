@@ -9,9 +9,9 @@ const BestProduct = (props) => {
         style={{ position: "relative" }}
       >
         <img src={props.imageUrl} className="relative" alt={props.name} />
-        <div className="cursor-pointer absolute inset-x-0 inset-y-0 flex justify-center items-center  bg-black opacity-60 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out">
+        <div className="absolute inset-x-0 inset-y-0 flex justify-center items-center  bg-black opacity-60 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out">
           <Link to="/product">
-            <p className="text-white hover:text-orange">Details</p>
+            <p className="cursor-pointer text-white hover:text-yellow">Selengkapnya</p>
           </Link>
         </div>
       </div>
