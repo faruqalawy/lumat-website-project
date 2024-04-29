@@ -1,0 +1,184 @@
+{
+  "tagline": "NIKMATI KELEZATAN SEJATI SETIAP SAAT",
+  "products": [
+    {
+      "id": 1,
+      "name": "AYAM KARATON",
+      "description": "Ayam bumbu yang diungkep dengan perpaduan tekstur lembut dan rasa gurih manis yang tak tertandingi.",
+      "images": {
+        "images-1": "images/karaton-1.webp",
+        "images-2": "images/karaton-2.webp",
+        "images-3": "images/karaton-3.webp",
+        "images-4": "images/karaton-4.webp"
+      },
+      "pricing": [
+        {
+          "name": "Single",
+          "desc": "Rp. 17.500 / pcs"
+        },
+        {
+          "name": "Double",
+          "desc": "Rp. 35.000 / 2 pcs"
+        }
+      ],
+      "information": {
+        "1": "LPPOM-MUI ID32110015297320124",
+        "2": "Expired 1 bulan daalm freezer kulkas",
+        "3": "Dapat dikonsumsi untuk segala usia"
+      },
+      "servings": {
+        "1": "Bisa dihangatkan dengan microwave",
+        "2": "Bisa digoreng dengan minyak secukupnya",
+        "3": "Bisa dikukus atau dibakar"
+      }
+    },
+    {
+      "id": 2,
+      "name": "AYAM BUMBU KUNING",
+      "description": "Ayam Bumbu Kuning Utuh (Bakakak), dengan ciri khas bumbu kuning yang beraroma, berasa, dan rempah yang kuat.",
+      "images": {
+        "images-1": "images/abukun-1.webp",
+        "images-2": "images/abukun-2.webp",
+        "images-3": "images/abukun-3.webp",
+        "images-4": "images/abukun-4.webp",
+        "images-5": "images/abukun-5.webp",
+        "images-6": "images/abukun-6.webp"
+      },
+      "pricing": [
+        {
+          "name": "Double",
+          "desc": "Rp. 32.000 / 2 pcs"
+        },
+        {
+          "name": "Utuh",
+          "desc": "Rp. 73.000 / 1 ekor"
+        }
+      ],
+      "information": {
+        "1": "Bumbu Kuning yang Kuat",
+        "2": "Aroma yang Menggoda",
+        "3": "Rasa yang Mendalam"
+      },
+      "servings": {
+        "1": "Digoreng hingga kulitnya menjadi renyah",
+        "2": "Dibakar untuk rasa yang lebih mendalam dan beraroma"
+      }
+    },
+    {
+      "id": 3,
+      "name": "RISOL ISI AYAM SUWIR",
+      "description": "Risol dengan kulit yang renyah dan tipis, serta isi ayam suwir yang banyak dan bumbu sambal yang pedas",
+      "images": {
+        "images-1": "images/risoles-1.webp",
+        "images-2": "images/risoles-2.webp",
+        "images-3": "images/risoles-3.webp"
+      },
+      "pricing": [
+        {
+          "name": "Single",
+          "desc": "Rp. 4.000 / pcs"
+        },
+        {
+          "name": "Medium",
+          "desc": "Rp. 20.000 / 5 pcs"
+        },
+        {
+          "name": "Large",
+          "desc": "Rp. 40.000 / 10 pcs"
+        }
+      ],
+      "information": {
+        "1": "Expired 2 bulan dalam frezeer kulkas",
+        "2": "Dapat dikonsumsi untuk segala usia"
+      },
+      "servings": {
+        "1": "Bisa digoreng dengan minyak secukupnya"
+      }
+    },
+    {
+      "id": 4,
+      "name": "PERKEDEL ISI AYAM",
+      "description": "Perkedel kentang yang dibuat dengan isian daging ayam pilihan yang segar dan berkualitas, serta bumbu-bumbu rempah yang alami dan tanpa pengawet",
+      "images": {
+        "images-1": "images/perkedel-1.webp",
+        "images-2": "images/perkedel-2.webp",
+        "images-3": "images/perkedel-3.webp"
+      },
+      "pricing": [
+        {
+          "name": "Single",
+          "desc": "Rp. 4.000 / pcs"
+        },
+        {
+          "name": "Medium",
+          "desc": "Rp. 20.000 / 5 pcs"
+        },
+        {
+          "name": "Large",
+          "desc": "Rp. 40.000 / 10 pcs"
+        }
+      ],
+      "information": {
+        "1": "Expired 2 bulan dalam frezeer kulkas",
+        "2": "Dapat dikonsumsi untuk segala usia"
+      },
+      "servings": {
+        "1": "Bisa digoreng dengan minyak secukupnya"
+      }
+    },
+    {
+      "id": 5,
+      "name": "TAHU BASO",
+      "description": "Tahu dengan isian baso yang penuh, perpaduan sempurna antara tahu yang lembut dan baso yang gurih",
+      "images": {
+        "images-1": "images/tahu-bakso-1.webp",
+        "images-2": "images/tahu-bakso-2.webp",
+        "images-3": "images/tahu-bakso-3.webp"
+      },
+      "pricing": [
+        {
+          "name": "Single",
+          "desc": "Rp. 4.000 / pcs"
+        },
+        {
+          "name": "Medium",
+          "desc": "Rp. 20.000 / 5 pcs"
+        },
+        {
+          "name": "Large",
+          "desc": "Rp. 40.000 / 10 pcs"
+        }
+      ],
+      "information": {
+        "1": "Expired 2 bulan dalam frezeer kulkas",
+        "2": "Dapat dikonsumsi untuk segala usia"
+      },
+      "servings": {
+        "1": "Bisa digoreng dengan minyak secukupnya"
+      }
+    },
+    {
+      "id": 6,
+      "name": "ALI AGREM",
+      "description": "Kue tradisional khas sunda yang memiliki cita rasa yang manis, gurih, dan terasa legit di lidah.",
+      "images": {
+        "images-1": "images/ali-1.webp",
+        "images-2": "images/ali-2.webp",
+        "images-3": "images/ali-3.webp"
+      },
+      "pricing": [
+        {
+          "name": "Package",
+          "desc": "Rp. 20.000 / 10 pcs"
+        }
+      ],
+      "information": {
+        "1": "Expired 2 minggu",
+        "2": "Dapat dikonsumsi untuk segala usia"
+      },
+      "servings": {
+        "1": "Dapat langsung dikonsumsi"
+      }
+    }
+  ]
+}

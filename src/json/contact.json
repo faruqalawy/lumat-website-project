@@ -1,0 +1,19 @@
+{
+  "contacts": [
+    {
+      "iconUrl": "../assets/icons/ic_phone.svg",
+      "name": "HP/SMS/WA",
+      "content": "0821-1545-9797"
+    },
+    {
+      "iconUrl": "../assets/icons/ic_mail.svg",
+      "name": "EMAIL",
+      "content": "lumatpublicrelations@gmail.com"
+    },
+    {
+      "iconUrl": "../assets/icons/ic_instagram-2.svg",
+      "name": "INSTAGRAM",
+      "content": "@lumatofficial"
+    }
+  ]
+}

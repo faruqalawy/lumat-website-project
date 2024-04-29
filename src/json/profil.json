@@ -1,0 +1,26 @@
+{
+    "description": "Lumat bergerak dalam bidang food and beverages, menyediakan berbagai jenis produk makanan rumahan yang bisa disajikan dengan cepat, memiliki rasa yang lezat, dan packaging yang aman dan bersih. NIkmati kelezatan setiap saat bersama Lumat, “Lumbung Makanan Nikmat”.",
+    "visi": "Menjadi perusahaan yang unggul dan terpercaya di bidang Food and Beverages yang menyediakan produk dan layanan yang bermutu tinggi dan berdaya saing kuat",
+    "misi": [
+        {
+            "id": 1,
+            "desc": "Menyediakan produk dan layanan yang memenuhi kebutuhan dan harapan pelanggan dengan harga yang kompetitif dan pelayanan yang prima."
+        },
+        {
+            "id": 2,
+            "desc": "Menjalin hubungan yang harmonis dan saling menguntungkan dengan mitra usaha, pemasok, dan pihak lain yang terkait dengan usaha CV. Lumat."
+        },
+        {
+            "id": 3,
+            "desc": "Mengembangkan sumber daya manusia yang profesional, kompeten, dan berintegritas, serta memberikan kesempatan yang adil dan merata bagi karyawan dan pegawai CV. Lumat."
+        },
+        {
+            "id": 4,
+            "desc": "Menjalankan usaha CV. Lumat dengan mengutamakan prinsip-prinsip tata kelola perusahaan yang baik, tanggung jawab sosial, dan kepedulian terhadap lingkungan."
+        },
+        {
+            "id": 5,
+            "desc": "Meningkatkan nilai CV. Lumat bagi sekutu, karyawan, pegawai, dan masyarakat."
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "pros": [
+        {
+            "name": "Rasa Lezat",
+            "description": "Nikmati Sensasi Lezat Dari Tiap Makanan Yang Dibuat Dengan Bahan Dan Resep Terbaik.",
+            "imgUrl": "ic_tasty.svg"
+        },
+        {
+            "name": "Instan",
+            "description": "Tiap Makanan Bisa Siap Saji Hanya Dalam Hitungan Menit.",
+            "imgUrl": "ic_instant.svg"
+        },
+        {
+            "name": "Higienis",
+            "description": "Tiap Makanan Melalui Proses Pembuatan dan Packaging Yang Aman dan Bersih.",
+            "imgUrl": "ic_hygiene.svg"
+        }
+    ],
+    "bestProduct": [
+        {
+            "name": "AYAM KARATON",
+            "imageUrl": "images/karaton-1.webp"
+        },
+        {
+            "name": "AYAM BUMBU KUNING",
+            "imageUrl": "images/abukun-6.webp"
+        },
+        {
+            "name": "RISOL ISI AYAM",
+            "imageUrl": "images/risoles-1.webp"
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Fathur",
+            "status": "Pelanggan LUMAT",
+            "testimonial": "Ayam karatonnya enak, bumbunya meresap. Saya suka dengan konsistensi kualitas dan pelayanan yang ramah. Kayaknya Lumat bakal jadi pilihan utama saya kalau bingung mau makan pakai lauk apa",
+            "imageUrl": "images/testimonial-1.webp"
+        },
+        {
+            "name": "Tarisa",
+            "status": "Pelanggan LUMAT",
+            "testimonial": "suprisingly delicious!! lagi suka nyoba2 co makanan instant di shopee trs nemu iniii. yg awalnya cm iseng tp kaget bgt ternyata rasanya sooo flavorful, bumbunya berasa bgt (enak!!!!!😭👍🏻) sampe ke daging2, mana ayamnya lembuttt!!! tahu baksonya jg empuk enakk, isiannya banyak!! it’s really a game changer buat orang yg gamau ribet masak lama-lama tapi pingin ngerasain masakan rumahan kyk aku🥹 keep it up!!!!",
+            "imageUrl": "images/testimonial-2.webp"
+        },
+        {
+            "name": "Latifah",
+            "status": "Pelanggan LUMAT",
+            "testimonial": "Gak nyangka  packing sangat bagus dan aman banget, soalnya di kirim ke luar kota kan. ISIAN TAHU NYA PADET BANGET😭😭😭 di goreng buat cemilan enakkk, tapi gak nyangka  kalo di rebus makan pake indomie juga ENAK BGTTTT👍🏻👍🏻👍🏻. THANKYOU SELLER",
+            "imageUrl": "images/testimonial-woman.webp"
+        }
+    ],
+    "portfolio": {
+        "videos": [
+            {
+                "name": "Lumat X Bean",
+                "videoUrl": "videos/portfolio-1.mp4"
+            }
+        ]
+    }
+}

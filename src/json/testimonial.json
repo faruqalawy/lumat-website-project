@@ -1,0 +1,29 @@
+{
+    "testimonials": [
+        {
+            "name": "Fathur",
+            "testimonial": "Ayam karatonnya enak, bumbunya meresap. Saya suka dengan konsistensi kualitas dan pelayanan yang ramah. Kayaknya Lumat bakal jadi pilihan utama saya kalau bingung mau makan pakai lauk apa",
+            "imageUrl": "images/testimonial-1.webp"
+        },
+        {
+            "name": "Tarisa",
+            "testimonial": "suprisingly delicious!! lagi suka nyoba2 co makanan instant di shopee trs nemu iniii. yg awalnya cm iseng tp kaget bgt ternyata rasanya sooo flavorful, bumbunya berasa bgt (enak!!!!!😭👍🏻) sampe ke daging2, mana ayamnya lembuttt!!! tahu baksonya jg empuk enakk, isiannya banyak!! it’s really a game changer buat orang yg gamau ribet masak lama-lama tapi pingin ngerasain masakan rumahan kyk aku🥹 keep it up!!!!",
+            "imageUrl": "images/testimonial-2.webp"
+        },
+        {
+            "name": "Latifah",
+            "testimonial": "Gak nyangka  packing sangat bagus dan aman banget, soalnya di kirim ke luar kota kan. ISIAN TAHU NYA PADET BANGET😭😭😭 di goreng buat cemilan enakkk, tapi gak nyangka  kalo di rebus makan pake indomie juga ENAK BGTTTT👍🏻👍🏻👍🏻. THANKYOU SELLER",
+            "imageUrl": "images/testimonial-woman.webp"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "videoUrl": "videos/testimonial-1.mp4"
+        },
+        {
+            "id": 2,
+            "videoUrl": "videos/testimonial-2.mp4"
+        }
+    ]
+}
