@@ -3,6 +3,9 @@ import React from "react";
 import backgroundImage from "../assets/images/bg-testimonial.png";
 import star from "../assets/icons/star.svg";
 
+import quoteLeft from "../assets/icons/quote-left.svg";
+import quoteRight from "../assets/icons/quote-right.svg";
+
 import Button from "./button";
 
 const Testimonial = (props) => {
@@ -31,7 +34,7 @@ const Testimonial = (props) => {
 
       <div>
         <img
-          src="/quote-left.svg"
+          src={quoteLeft}
           alt="quote-left"
           className="opacity-20 w-10 pb-1 md:w-12 lg:w-16"
         />
@@ -39,7 +42,7 @@ const Testimonial = (props) => {
           {props.testimonial}
         </h1>
         <img
-          src="/quote-right.svg"
+          src={quoteRight}
           alt="quote-right"
           className="opacity-20 w-10 ml-auto pb-1 md:w-12 lg:w-16"
         />
