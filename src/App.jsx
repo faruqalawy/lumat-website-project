@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import React, { useState } from 'react';
 
 import Home from './pages/Home.jsx';
 import Product from './pages/Product.jsx';
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home isSmallNavOpen={isSmallNavOpen} setIsSmallNavOpen={handleSmallNavOpen} />} />
           <Route path="/product" element={<Product isSmallNavOpen={isSmallNavOpen} setIsSmallNavOpen={handleSmallNavOpen} />} />
-          <Route path="/portfolio" element={<Portfolio isSmallNavOpen={isSmallNavOpen} setIsSmallNavOpen={handleSmallNavOpen} />} />
+          {/* <Route path="/portfolio" element={<Portfolio isSmallNavOpen={isSmallNavOpen} setIsSmallNavOpen={handleSmallNavOpen} />} /> */}
           <Route path="/testimonial" element={<Testimonial isSmallNavOpen={isSmallNavOpen} setIsSmallNavOpen={handleSmallNavOpen} />} />
           <Route path="/profil" element={<Profil isSmallNavOpen={isSmallNavOpen} setIsSmallNavOpen={handleSmallNavOpen} />} />
           <Route path="/contact" element={<Contact isSmallNavOpen={isSmallNavOpen} setIsSmallNavOpen={handleSmallNavOpen} />} />

@@ -43,11 +43,11 @@ const Nav = ({ setIsSmallNavOpen }) => {
               Produk
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/portfolio" className={`hover:text-yellow ${isPageActive(pathname, '/portfolio')}`}>
               Portfolio
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/testimonial" className={`hover:text-yellow ${isPageActive(pathname, '/testimonial')}`}>
               Testimoni
@@ -97,11 +97,11 @@ const Nav = ({ setIsSmallNavOpen }) => {
                 Produk
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/portfolio" className={`hover:text-yellow ${isPageActive(pathname, '/portfolio')}`}>
                 Portfolio
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/testimonial" className={`hover:text-yellow ${isPageActive(pathname, '/testimonial')}`}>
                 Testimoni
