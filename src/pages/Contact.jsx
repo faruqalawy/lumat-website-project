@@ -18,7 +18,7 @@ const Contact = ({isSmallNavOpen, setIsSmallNavOpen}) => {
       <ContactForm />
 
       <div className="mx-5 md:mx-12 lg:mx-24 flex flex-col items-center my-9">
-        <h1 className=" font-bold text-sm md:text-[28px]">
+        <h1 className=" text-center font-bold text-2xl md:text-3xl">
           Anda Juga Dapat Menghubungi Kami Melalui:
         </h1>
 
@@ -35,8 +35,8 @@ const Contact = ({isSmallNavOpen, setIsSmallNavOpen}) => {
                 className="md:w-20 lg:w-24"
               />
             </a>
-            <h1 className="text-xs md:text-base lg:text-xl mt-2">HP/SMS/WA</h1>
-            <p className="font-light font-openSans text-xs md:text-base lg:text-xl">
+            <h1 className="lg:text-xl mt-2">HP/SMS/WA</h1>
+            <p className="font-light font-openSans lg:text-xl">
               0821-1545-9797
             </p>
           </div>
@@ -52,8 +52,8 @@ const Contact = ({isSmallNavOpen, setIsSmallNavOpen}) => {
                 className="md:w-20 lg:w-24"
               />
             </a>
-            <h1 className="text-xs md:text-base lg:text-xl mt-2">EMAIL</h1>
-            <p className="font-light font-openSans text-xs md:text-base lg:text-xl">
+            <h1 className="lg:text-xl mt-2">EMAIL</h1>
+            <p className="font-light font-openSans lg:text-xl">
               lumatpublicrelations@gmail.com
             </p>
           </div>
@@ -70,8 +70,8 @@ const Contact = ({isSmallNavOpen, setIsSmallNavOpen}) => {
                 className="md:w-20 lg:w-24"
               />
             </a>
-            <h1 className="text-xs md:text-base lg:text-xl mt-2">INSTAGRAM</h1>
-            <p className="font-light font-openSans text-xs md:text-base lg:text-xl">
+            <h1 className="lg:text-xl mt-2">INSTAGRAM</h1>
+            <p className="font-light font-openSans lg:text-xl">
               @lumatofficial
             </p>
           </div>

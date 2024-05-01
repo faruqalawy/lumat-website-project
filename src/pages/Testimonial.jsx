@@ -16,7 +16,7 @@ const Testimonial = ({isSmallNavOpen, setIsSmallNavOpen}) => {
         className={`shadow-md mx-5 md:mx-12 lg:mx-24 rounded-md bg-white p-7 ${isSmallNavOpen ? "" : "relative"}`}
         style={{ marginTop: -15 }}
       >
-        <h1 className="text-center font-bold text-sm mb-2 sm:text-xl md:text-2xl lg:text-3xl my-6">
+        <h1 className="text-center font-bold text-xl mb-2 md:text-2xl lg:text-3xl my-6">
           APA KATA MEREKA TENTANG LUMAT?
         </h1>
 

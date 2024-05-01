@@ -14,7 +14,7 @@ const Profil = ({isSmallNavOpen, setIsSmallNavOpen}) => {
     const content =  (
         <div className="md:mt-8 lg:mt-0">
             <div>
-              <h1 className="text-xl md:text-4xl text-orange-light font-bold mt-3">
+              <h1 className="text-2xl md:text-4xl text-orange-light font-bold mt-3">
                 Visi Kami
               </h1>
               <p className="md:text-xl font-openSans font-light md:mt-1">
@@ -22,7 +22,7 @@ const Profil = ({isSmallNavOpen, setIsSmallNavOpen}) => {
               </p>
             </div>
             <div className="md:mt-6 mb-20">
-              <h1 className="text-xl md:text-4xl text-orange-light font-bold mt-3">
+              <h1 className="text-2xl md:text-4xl text-orange-light font-bold mt-3">
                 Misi Kami
               </h1>
               <ol type="1" className="ml-5">
@@ -47,13 +47,13 @@ const Profil = ({isSmallNavOpen, setIsSmallNavOpen}) => {
         <div className=" flex flex-col lg:grid lg:grid-cols-2 gap-6">
           <img src={mainImageProfil} alt="profil-main-image" />
           <div className="flex flex-col mt-1 md:mt-8 lg:mt-0">
-            <h1 className=" md:mb-3 text-xl md:text-4xl text-orange-light font-bold">
+            <h1 className=" md:mb-3 text-2xl md:text-4xl text-orange-light font-bold">
               TENTANG KAMI
             </h1>
             <p className=" md:text-xl font-openSans font-light">
               {jsonProfil.description}
             </p>
-            <Button isArrow text="LIHAT PRODUK KAMI" path="/product" className="mt-2.5 md:mt-5" />
+            <Button isArrow text="LIHAT PRODUK KAMI" path="/product" className="mt-2.5 md:mt-5 py-5" />
           </div>
         </div>
 

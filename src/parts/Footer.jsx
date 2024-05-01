@@ -17,11 +17,11 @@ const Footer = () => {
 
   return (
     <div className=" bg-grey w-full font-nunito text-white">
-      <div className="flex flex-col items-center pt-4 ">
+      <button className="w-full flex flex-col items-center pt-4 ">
         <img
           src={Up}
           alt="up"
-          className=" md:w-8 hover:cursor-pointer "
+          className=" w-8 hover:cursor-pointer "
           target="_blank"
           rel="noopener noreferrer"
           onClick={scrollToTop}
@@ -34,7 +34,7 @@ const Footer = () => {
         >
           Back to Top
         </p>
-      </div>
+      </button>
       <div className="mx-5 md:mx-12 lg:mx-24 grid grid-rows-6 grid-cols-6 gap-1 md:gap-2 lg:gap-3 py-5 text-base">
         <div className=" col-span-6 row-span-2 md:row-span-3 lg:row-span-6 lg:col-span-2 mx-auto md:mb-8">
           <img src={Logo} alt="brand-logo" className="md:w-[350px]" />
@@ -98,9 +98,9 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="mt-1.5">
+          <div className="mt-2.5">
             <h1 className="text-orange border-b pb-1 font-bold text-xl">ONLINE SHOP</h1>
-            <div className="flex gap-2 pt-2">
+            <div className="flex gap-3 pt-2">
               <a
                 href="http://shopee.co.id/lumatofficial"
                 className=" hover:cursor-pointer"

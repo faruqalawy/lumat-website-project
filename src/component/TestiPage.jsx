@@ -26,7 +26,7 @@ const TestiPage = ({ id, imageUrl, testimonial, name }) => {
           className="rounded-full max-w-[70vw] md:max-w-[60vw]  border-[10px] border-white"
           fetchPriority='high'
         />
-        <h1 className="text-lg sm:text-2xl font-medium pt-1 lg:hidden">
+        <h1 className="text-xl sm:text-2xl font-medium pt-1 lg:hidden">
           Happy Customer
         </h1>
         <div className="flex justify-center my-3 lg:hidden">{stars}</div>
@@ -48,14 +48,14 @@ const TestiPage = ({ id, imageUrl, testimonial, name }) => {
       </div>
 
       <div className="flex flex-col justify-center items-center lg:items-start lg:gap-3">
-        <h1 className="hidden lg:block text-lg sm:text-2xl lg:text-4xl font-medium pt-1">
+        <h1 className="hidden lg:block lg:text-4xl font-medium pt-1">
           Happy Customer
         </h1>
         <div className="hidden lg:flex">{stars}</div>
-        <h1 className="font-openSans text-center lg:text-left text-xs sm:text-base lg:text-lg font-light sm:max-w-[70vw]">
+        <h1 className="font-openSans text-center lg:text-left lg:text-lg font-light sm:max-w-[70vw]">
           {testimonial}
         </h1>
-        <p className="text-center lg:text-left lg:hidden font-light sm:text-xl md:text-2xl">{name}</p>
+        <p className="text-center lg:text-left lg:hidden font-light text-2xl md:text-3xl">{name}</p>
       </div>
     </div>
   );

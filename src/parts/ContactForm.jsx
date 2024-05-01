@@ -1,31 +1,32 @@
-import React, {useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 
-import Spinner from "../assets/icons/ic_spinner.svg"
+import Spinner from "../assets/icons/ic_spinner.svg";
 
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const formRef = useRef(null);
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbwuWKdzRhMD6S6cLKEjj5Vh6a0Hxegbsav6VAz6pssviE4mbINpmrD6o5_3Kx0kotPf_A/exec";
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbwuWKdzRhMD6S6cLKEjj5Vh6a0Hxegbsav6VAz6pssviE4mbINpmrD6o5_3Kx0kotPf_A/exec";
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-  
+
     try {
       const response = await fetch(scriptUrl, {
         method: "POST",
         mode: "no-cors",
         body: new FormData(formRef.current),
       });
-  
+
       if (response.ok) {
         console.log("SUCCESSFULLY SUBMITTED TO SPREADSHEET");
-        
+
         // Mengosongkan formulir setelah pengiriman berhasil
         formRef.current.reset();
-        
+
         // Menampilkan pesan konfirmasi kepada pengguna
         alert("Pesan Anda telah terkirim!");
       } else {
@@ -36,28 +37,41 @@ const ContactForm = () => {
     } finally {
       setLoading(false);
     }
-  
+
     sendEmail(e);
-  };  
-  
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_rmz9ajg', 'template_owfrqbt', formRef.current, 'zrKAgDF40m1z74Hcv')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_rmz9ajg",
+        "template_owfrqbt",
+        formRef.current,
+        "zrKAgDF40m1z74Hcv"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   return (
     <div className="mx-5 md:mx-12 lg:mx-24 my-6">
-      <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-4">Hubungi Kami</h1>
-      <form ref={formRef}
-       onSubmit={handleSubmit}
-       className=" border-2 border-grey-light flex flex-col gap-2
-       rounded-xl">
+      <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
+        Hubungi Kami
+      </h1>
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className=" border-2 border-grey-light flex flex-col gap-2
+       rounded-xl"
+      >
         <label htmlFor="name"></label>
         <input
           type="text"
@@ -98,16 +112,29 @@ const ContactForm = () => {
         <div className=" w-full flex justify-center mb-4 mt-2 lg:mt-0">
           {loading ? (
             <button className="flex justify-center" disabled>
-            
-            <span className="font-600 px-4 md:px-6 lg:px-10 flex items-center bg-dark-orange text-white rounded-full h-5 md:h-10 lg:h-14 sm:mt-2 lg:mt-4 w-fit font-barlow  font-medium text-xs md:text-lg lg:text-2xl"><img src={Spinner} alt="spinner" className=" animate-spin mr-2 md:mr-4 w-3 md:w-6"  />LOADING...</span>
-          </button>
+              <span className="font-600 px-4 md:px-6 lg:px-10 py-5 flex items-center bg-dark-orange text-white rounded-full h-5 md:h-10 lg:h-14 sm:mt-2 lg:mt-4 w-fit font-barlow  font-medium md:text-lg lg:text-2xl">
+                <img
+                  src={Spinner}
+                  alt="spinner"
+                  className=" animate-spin mr-2 md:mr-4 w-3 md:w-6"
+                />
+                LOADING...
+              </span>
+            </button>
           ) : (
+            <input
+  type="submit"
+  className="font-600 px-10 md:px-12 lg:px-16 py-2 flex bg-orange hover:bg-dark-orange text-white rounded-full font-barlow font-medium md:text-lg lg:text-2xl"
+  style={{ 
+    textAlign: 'center', // Mengatur teks menjadi terpusat secara horizontal
+    display: 'flex',
+    alignItems: 'center', // Mengatur konten agar berada di tengah secara vertikal
+    justifyContent: 'center', // Mengatur konten agar berada di tengah secara horizontal
+  }}
+  value="KIRIM"
+/>
 
-          <input
-                    type="submit"
-                    className="font-600 px-6 md:px-10 lg:px-16 flex bg-orange hover:bg-dark-orange text-white rounded-full h-5 md:h-10 lg:h-14 sm:mt-2 lg:mt-4 w-fit font-barlow  font-medium text-xs md:text-lg lg:text-2xl "
-                    value="KIRIM"
-                  />
+
           )}
         </div>
       </form>
