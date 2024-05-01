@@ -74,7 +74,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-6 row-span-2 md:col-span-3 md:row-span-3 lg:row-span-6 lg:col-span-2  grid grid-rows-2 mt-0.5">
+        <div className="col-span-6 row-span-2 md:col-span-3 md:row-span-3 lg:row-span-6 lg:col-span-2  grid grid-rows-2 mt-2 sm:mt-0">
           <div className="">
             <h1 className="text-orange border-b pb-1 font-bold text-xl">
               MEDIA SOSIAL

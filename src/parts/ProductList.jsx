@@ -39,6 +39,7 @@ const ProductDetails = ({ isSmallNavOpen }) => {
   const description = (item) => {
     const numberOfPrices = item.pricing.length;
     const pricingGridStyle = numberOfPrices <= 2 ? "grid-rows-2" : "grid-rows-3";
+    const pricingGridStyle2 = numberOfPrices <= 2 ? "" : "grid-cols-2";
 
     return (
       <div className="mt-3 md:mt-6 l:m-0">
@@ -50,9 +51,9 @@ const ProductDetails = ({ isSmallNavOpen }) => {
         </p>
 
         <div className={`p-4 bg-light-yellow border-2 border-salted-yellow font-openSans grid md:grid-rows-5 gap-1.5 divide-y-[1.5px] divide-grey-light ${pricingGridStyle}`}>
-          <div className="pricing md:grid md:grid-cols-3 md:row-span-1">
+          <div className={`pricing grid grid-rows-2 ${pricingGridStyle2} md:grid-rows-1 md:grid-cols-3 md:row-span-1`}>
             {item.pricing.map((price, index) => (
-              <div key={index} className={`${index === 0 ? "" : "mt-1"}`}>
+              <div key={index} >
                 <h2 className="font-semibold">{price.name}</h2>
                 <p className="font-light">{price.desc}</p>
               </div>
