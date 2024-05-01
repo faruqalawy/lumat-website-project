@@ -11,7 +11,7 @@ const Pros = () => {
         <h1 className="font-nunito font-bold text-2xl md:text-3xl lg:text-[40px] text-center py-5 md:py-8">
           KENAPA LUMAT?
         </h1>
-        <div className="grid grid-rows-3 md:grid-rows-none md:grid-cols-3 gap-8 md:gap-0 pb-5 md:pb-7">
+        <div className="md:grid flex flex-col md:grid-rows-none md:grid-cols-3 gap-8 md:gap-0 pb-5 md:pb-7">
           {jsonHome.pros.map((item, index) => {
             return (
               <div key={index} className="flex flex-col items-center">
@@ -23,7 +23,7 @@ const Pros = () => {
                 <h1 className="font-nunito font-semibold text-2xl lg:text-3xl mt-2.5 ">
                   {item.name}
                 </h1>
-                <p className="font-openSans text-center mx-4 xl:text-lg">
+                <p className="font-openSans text-center mx-6 xl:text-lg">
                   {item.description}
                 </p>
               </div>

@@ -86,7 +86,7 @@ const Nav = ({ setIsSmallNavOpen }) => {
         </div>
 
         <nav className="hidden sm:flex justify-between">
-          <ul className="font-semibold flex gap-5 items-center text-white text-base lg:text-2xl ">
+          <ul className="font-semibold flex gap-5 items-center text-white text-lg lg:text-2xl ">
             <li>
               <Link to="/" className={`hover:text-yellow ${isPageActive(pathname, '/')}`}>
                 Home

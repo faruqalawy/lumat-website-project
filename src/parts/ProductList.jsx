@@ -49,8 +49,8 @@ const ProductDetails = ({ isSmallNavOpen }) => {
           {item.description}
         </p>
 
-        <div className={`p-4 bg-light-yellow border-2 border-salted-yellow font-openSans grid gap-1.5 divide-y-[1.5px] divide-grey-light ${pricingGridStyle}`}>
-          <div className="pricing md:grid md:grid-cols-3">
+        <div className={`p-4 bg-light-yellow border-2 border-salted-yellow font-openSans grid md:grid-rows-5 gap-1.5 divide-y-[1.5px] divide-grey-light ${pricingGridStyle}`}>
+          <div className="pricing md:grid md:grid-cols-3 md:row-span-1">
             {item.pricing.map((price, index) => (
               <div key={index} className={`${index === 0 ? "" : "mt-1"}`}>
                 <h2 className="font-semibold">{price.name}</h2>
@@ -58,7 +58,7 @@ const ProductDetails = ({ isSmallNavOpen }) => {
               </div>
             ))}
           </div>
-          <div className="pt-2 ">
+          <div className="pt-2 md:row-span-2">
             <h2 className="font-semibold">Informasi Produk</h2>
             {Object.values(item.information).map((information, index) => (
               <p className="font-light" key={index}>
@@ -66,7 +66,7 @@ const ProductDetails = ({ isSmallNavOpen }) => {
               </p>
             ))}
           </div>
-          <div className="pt-2 ">
+          <div className="pt-2 md:row-span-2">
             <h2 className="font-semibold">Pilihan Cara Penyajian</h2>
             {Object.values(item.servings).map((serving, index) => (
               <p className="font-light" key={index}>

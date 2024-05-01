@@ -121,7 +121,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" text-center font-barlow text-xs md:text-base py-8 border-t">
+      <div className=" text-center font-barlow text-sm md:text-base py-8 border-t">
         <h1>Copyright © Lumat. 2024. All rights reserved.</h1>
       </div>
     </div>

@@ -21,7 +21,7 @@ const Home = ({isSmallNavOpen, setIsSmallNavOpen}) => {
         </h1>
         <BestSlider />
         <div className="flex flex-col items-center mt-4 md:mt-7">
-          <Button isArrow text="LIHAT PRODUK LAINNYA" path="/product" className="mx-auto" />
+          <Button isArrow text="PRODUK LAINNYA" path="/product" className="mx-auto py-5" />
         </div>
       </div>
 
