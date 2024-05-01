@@ -23,7 +23,7 @@ const Pros = () => {
                 <h1 className="font-nunito font-semibold text-2xl lg:text-3xl mt-2.5 ">
                   {item.name}
                 </h1>
-                <p className="font-openSans text-center mx-4 text-xs lg:text-base xl:text-lg">
+                <p className="font-openSans text-center mx-4 xl:text-lg">
                   {item.description}
                 </p>
               </div>

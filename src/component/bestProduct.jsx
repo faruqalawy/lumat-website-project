@@ -15,7 +15,7 @@ const BestProduct = (props) => {
           </Link>
         </div>
       </div>
-      <h1 className="font-nunito text-center mt-2.5 md:mt-5 lg:mt-7 font-medium text-xs sm:text-2xl lg:text-3xl xl:text-4xl hover:text-orange cursor-pointer duration-200">
+      <h1 className="font-nunito text-center mt-2.5 md:mt-5 lg:mt-7 font-medium sm:text-2xl lg:text-3xl xl:text-4xl hover:text-orange cursor-pointer duration-200">
         {props.name}
       </h1>
     </>

@@ -28,7 +28,7 @@ const HomeHeader = ({setIsSmallNavOpen}) => {
           </h1>
           <h1 className="font-extrabold text-white text-4xl lg:text-6xl">MAKAN NIKMAT</h1>
         </div>
-        <Button text="LIHAT PRODUK" path="/product" className="my-3 md:my-5 lg:my-6 " isArrow/>
+        <Button text="LIHAT PRODUK" path="/product" className="my-3 md:my-5 lg:my-6 py-5 px-5 md:px-7" isArrow/>
       </header>
     </div>
   );

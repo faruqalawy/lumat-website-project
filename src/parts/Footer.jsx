@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <div className=" bg-grey w-full font-nunito text-white">
-      <div className="flex flex-col items-center pt-4 text-xs md:text-base">
+      <div className="flex flex-col items-center pt-4 ">
         <img
           src={Up}
           alt="up"
@@ -35,7 +35,7 @@ const Footer = () => {
           Back to Top
         </p>
       </div>
-      <div className="mx-5 md:mx-12 lg:mx-24 grid grid-rows-6 grid-cols-6 gap-1 md:gap-2 lg:gap-3 py-5 text-xs md:text-base">
+      <div className="mx-5 md:mx-12 lg:mx-24 grid grid-rows-6 grid-cols-6 gap-1 md:gap-2 lg:gap-3 py-5 text-base">
         <div className=" col-span-6 row-span-2 md:row-span-3 lg:row-span-6 lg:col-span-2 mx-auto md:mb-8">
           <img src={Logo} alt="brand-logo" className="md:w-[350px]" />
           <h1 className="mt-1 text-base md:text-[26px]">
@@ -43,7 +43,7 @@ const Footer = () => {
           </h1>
         </div>
         <div className=" col-span-6 row-span-2 md:col-span-3 md:row-span-3 lg:row-span-6 lg:col-span-2">
-          <h1 className="text-orange border-b pb-1  font-bold">HUBUNGI KAMI</h1>
+          <h1 className="text-orange border-b pb-1 font-bold text-xl">HUBUNGI KAMI</h1>
           <div className="pt-2 flex flex-col gap-2">
             <p>
               {" "}
@@ -74,9 +74,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-6 row-span-2 md:col-span-3 md:row-span-3 lg:row-span-6 lg:col-span-2  grid grid-rows-2 ">
+        <div className="col-span-6 row-span-2 md:col-span-3 md:row-span-3 lg:row-span-6 lg:col-span-2  grid grid-rows-2 mt-0.5">
           <div className="">
-            <h1 className="text-orange border-b pb-1 font-bold">
+            <h1 className="text-orange border-b pb-1 font-bold text-xl">
               MEDIA SOSIAL
             </h1>
             <div className="flex gap-2 pt-2 ">
@@ -98,8 +98,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="mt-1">
-            <h1 className="text-orange border-b pb-1 font-bold">ONLINE SHOP</h1>
+          <div className="mt-1.5">
+            <h1 className="text-orange border-b pb-1 font-bold text-xl">ONLINE SHOP</h1>
             <div className="flex gap-2 pt-2">
               <a
                 href="http://shopee.co.id/lumatofficial"

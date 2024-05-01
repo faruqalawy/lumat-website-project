@@ -24,10 +24,10 @@ const Testimonial = (props) => {
           alt="testimonial"
           className="rounded-full max-w-[70vw] md:max-w-[60vw]  border-[10px] border-white lg:max-w-[35vw]"
         />
-        <h1 className="text-lg sm:text-2xl lg:text-4xl font-bold pt-1">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold pt-1">
           {props.name}
         </h1>
-        <p className="text-xs sm:text-sm lg:text-lg font-bold">
+        <p className=" sm:text-lg  font-bold">
           {props.status}
         </p>
       </div>
@@ -38,7 +38,7 @@ const Testimonial = (props) => {
           alt="quote-left"
           className="opacity-20 w-10 pb-1 md:w-12 lg:w-16"
         />
-        <h1 className="font-openSans text-xs sm:text-sm lg:text-lg font-light sm:max-w-[70vw]">
+        <h1 className="font-openSans lg:text-lg font-light sm:max-w-[70vw]">
           {props.testimonial}
         </h1>
         <img

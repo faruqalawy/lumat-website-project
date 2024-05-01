@@ -8,7 +8,7 @@ import ArrowOrange from "../assets/icons/arrow-orange.svg";
 import { twMerge } from "tailwind-merge";
 
 function Button(props) {
-  const { isWhite, isArrow, isSubmit } = props;
+  const { isWhite, isArrow} = props;
 
   return (
     <Link to={props.path}>
@@ -19,7 +19,7 @@ function Button(props) {
         )}
       >
         <h2
-          className={`font-barlow  font-medium text-xs md:text-lg lg:text-2xl ${
+          className={`font-barlow  font-medium md:text-lg lg:text-2xl ${
             isArrow ? "pl-1.5 md:pl-3 lg:pl-5" : ""
           }`}
         >
@@ -27,7 +27,7 @@ function Button(props) {
         </h2>
         <img
           src={isWhite ? ArrowOrange : Arrow}
-          className={`h-3 md:h-4 lg:h-6 pr-1.5 sm:pr-2.5 lg:pr-6 pl-0.5 md:pl-1 lg:pl-2.5 ${
+          className={`h-4 md:h-5 lg:h-6 pr-1.5 sm:pr-2.5 lg:pr-6 pl-1 md:pl-1.5 lg:pl-2.5 ${
             isArrow ? "" : "hidden"
           }`}
           alt="arrow"
