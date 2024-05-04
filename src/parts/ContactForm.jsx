@@ -51,7 +51,7 @@ const ContactForm = () => {
           formRef.current.reset();
           console.log(result.text);
           setTimeout(() => {
-            toast.success("Pesan telah anda terkirim!", {
+            toast.success("Pesan anda telah terkirim!", {
               position: "top-center"
             });
           }, 100);
