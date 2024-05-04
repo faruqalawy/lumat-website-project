@@ -1,13 +1,14 @@
 import React, { useRef, useState } from "react";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Spinner from "../assets/icons/ic_spinner.svg";
 
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const formRef = useRef(null);
-  const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbwuWKdzRhMD6S6cLKEjj5Vh6a0Hxegbsav6VAz6pssviE4mbINpmrD6o5_3Kx0kotPf_A/exec";
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -15,52 +16,52 @@ const ContactForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(scriptUrl, {
-        method: "POST",
-        mode: "no-cors",
-        body: new FormData(formRef.current),
-      });
+      // Mengosongkan formulir setelah pengiriman berhasil
+      // Mengirim email
 
-      if (response.ok) {
-        console.log("SUCCESSFULLY SUBMITTED TO SPREADSHEET");
-
-        // Mengosongkan formulir setelah pengiriman berhasil
-        formRef.current.reset();
-
-        // Menampilkan pesan konfirmasi kepada pengguna
-        alert("Pesan Anda telah terkirim!");
-      } else {
-        console.error("Submission failed:", response.statusText);
-      }
+      sendEmail(e);
     } catch (error) {
       console.error("Error during submission:", error);
+      alert("Terjadi kesalahan saat mengirim formulir. Silakan coba lagi.");
     } finally {
-      setLoading(false);
     }
-
-    sendEmail(e);
   };
+
+  // const alert = (props) => (
+  //   <div className=" h-1/6 w-4/5 border border-green-alert-border text-green-alert-text bg-green-alert">
+  //     <h1 className="">
+  //       {props.text}
+  //     </h1>
+  //   </div>
+  // )
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_rmz9ajg",
-        "template_owfrqbt",
+        "service_dx5j8s6",
+        "template_z9zc6qc",
         formRef.current,
-        "zrKAgDF40m1z74Hcv"
+        "topgSIScZYfs1kRkL"
       )
       .then(
         (result) => {
+          setLoading(false);
+          formRef.current.reset();
           console.log(result.text);
+          setTimeout(() => {
+            toast.success("Pesan telah anda terkirim!", {
+              position: "top-center"
+            });
+          }, 100);
         },
         (error) => {
           console.log(error.text);
+          alert("Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.");
         }
       );
   };
-
   return (
     <div className="mx-5 md:mx-12 lg:mx-24 my-6">
       <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
@@ -122,22 +123,17 @@ const ContactForm = () => {
               </span>
             </button>
           ) : (
-            <input
-  type="submit"
-  className="font-600 px-10 md:px-12 lg:px-16 py-2 flex bg-orange hover:bg-dark-orange text-white rounded-full font-barlow font-medium md:text-lg lg:text-2xl"
-  style={{ 
-    textAlign: 'center', // Mengatur teks menjadi terpusat secara horizontal
-    display: 'flex',
-    alignItems: 'center', // Mengatur konten agar berada di tengah secara vertikal
-    justifyContent: 'center', // Mengatur konten agar berada di tengah secara horizontal
-  }}
-  value="KIRIM"
-/>
-
-
+            <button
+              type="submit"
+              className="font-600 px-10 md:px-12 lg:px-16 py-5 flex items-center bg-orange hover:bg-dark-orange text-white rounded-full h-5 md:h-10 lg:h-14 sm:mt-2 lg:mt-4 w-fit font-barlow font-medium md:text-lg lg:text-2xl"
+              onClick={handleSubmit} // fungsi handleSubmit digunakan untuk menangani pengiriman formulir
+            >
+              KIRIM
+            </button>
           )}
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };

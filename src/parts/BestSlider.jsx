@@ -25,6 +25,7 @@ const BestSlider = () => {
       rewind={true}
       rewindWithAnimation={true}
       autoPlay={true}
+      arrows={false}
       autoPlaySpeed={2500}
       removeArrowOnDeviceType={["desktop"]}
       containerClass="relative mx-5 md:mx-12 lg:mx-24 flex"

@@ -16,7 +16,10 @@ export default {
         "salted-yellow": "#E6DC80",
         "light-black": "#4D4C4B",
         "green-whatsapp": "#25D366",
-        "green-whatsapp-dark": "#21B758"
+        "green-whatsapp-dark": "#21B758",
+        "green-alert": "#d1e7dd",
+        "green-alert-border": "#a3cfbb",
+        "green-alert-text": "#0a3622"
       },
 
       fontFamily: {
