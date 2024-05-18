@@ -8,21 +8,21 @@ import { Fade } from "react-awesome-reveal";
 import "../index.css";
 
 const isPageActive = (currentPage, targetPage) => {
-  return currentPage === targetPage ? 'text-yellow' : '';
+  return currentPage === targetPage ? "text-yellow" : "";
 };
 
 const Nav = ({ setIsSmallNavOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();
 
-  useEffect(() => { 
-      if (isOpen) {
-        document.body.style.overflowY = "hidden";
-        setIsSmallNavOpen(true);
-      } else {
-        document.body.style.overflowY = "auto";
-        setIsSmallNavOpen(false);
-      }
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflowY = "hidden";
+      setIsSmallNavOpen(true);
+    } else {
+      document.body.style.overflowY = "auto";
+      setIsSmallNavOpen(false);
+    }
   }, [isOpen, setIsSmallNavOpen]);
 
   const toggleNavbar = () => {
@@ -30,16 +30,25 @@ const Nav = ({ setIsSmallNavOpen }) => {
   };
 
   const smallNav = (
-    <Fade duration={350}> 
+    <Fade duration={350}>
       <nav className="w-full bg-black/80 sm:hidden absolute left-0 top-0 h-screen flex justify-center items-center border-b border-black">
         <ul className="text-3xl gap-12 font-semibold text-center text-white flex flex-col">
           <li>
-            <Link to="/" className={`hover:text-yellow ${isPageActive(pathname, '/')}`}>
+            <Link
+              to="/"
+              className={`hover:text-yellow ${isPageActive(pathname, "/")}`}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/product" className={`hover:text-yellow ${isPageActive(pathname, '/product')}`}>
+            <Link
+              to="/product"
+              className={`hover:text-yellow ${isPageActive(
+                pathname,
+                "/product"
+              )}`}
+            >
               Produk
             </Link>
           </li>
@@ -49,17 +58,35 @@ const Nav = ({ setIsSmallNavOpen }) => {
             </Link>
           </li> */}
           <li>
-            <Link to="/testimonial" className={`hover:text-yellow ${isPageActive(pathname, '/testimonial')}`}>
+            <Link
+              to="/testimonial"
+              className={`hover:text-yellow ${isPageActive(
+                pathname,
+                "/testimonial"
+              )}`}
+            >
               Testimoni
             </Link>
           </li>
           <li>
-            <Link to="/profil" className={`hover:text-yellow ${isPageActive(pathname, '/profil')}`}>
+            <Link
+              to="/profil"
+              className={`hover:text-yellow ${isPageActive(
+                pathname,
+                "/profil"
+              )}`}
+            >
               Profil
             </Link>
           </li>
           <li>
-            <Link to="/contact" className={`hover:text-yellow ${isPageActive(pathname, '/contact')}`}>
+            <Link
+              to="/contact"
+              className={`hover:text-yellow ${isPageActive(
+                pathname,
+                "/contact"
+              )}`}
+            >
               Kontak
             </Link>
           </li>
@@ -88,12 +115,21 @@ const Nav = ({ setIsSmallNavOpen }) => {
         <nav className="hidden sm:flex justify-between">
           <ul className="font-semibold flex gap-5 items-center text-white text-lg lg:text-2xl ">
             <li>
-              <Link to="/" className={`hover:text-yellow ${isPageActive(pathname, '/')}`}>
+              <Link
+                to="/"
+                className={`hover:text-yellow ${isPageActive(pathname, "/")}`}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/product" className={`hover:text-yellow ${isPageActive(pathname, '/product')}`}>
+              <Link
+                to="/product"
+                className={`hover:text-yellow ${isPageActive(
+                  pathname,
+                  "/product"
+                )}`}
+              >
                 Produk
               </Link>
             </li>
@@ -103,17 +139,35 @@ const Nav = ({ setIsSmallNavOpen }) => {
               </Link>
             </li> */}
             <li>
-              <Link to="/testimonial" className={`hover:text-yellow ${isPageActive(pathname, '/testimonial')}`}>
+              <Link
+                to="/testimonial"
+                className={`hover:text-yellow ${isPageActive(
+                  pathname,
+                  "/testimonial"
+                )}`}
+              >
                 Testimoni
               </Link>
             </li>
             <li>
-              <Link to="/profil" className={`hover:text-yellow ${isPageActive(pathname, '/profil')}`}>
+              <Link
+                to="/profil"
+                className={`hover:text-yellow ${isPageActive(
+                  pathname,
+                  "/profil"
+                )}`}
+              >
                 Profil
               </Link>
             </li>
             <li>
-              <Link to="/contact" className={`hover:text-yellow ${isPageActive(pathname, '/contact')}`}>
+              <Link
+                to="/contact"
+                className={`hover:text-yellow ${isPageActive(
+                  pathname,
+                  "/contact"
+                )}`}
+              >
                 Kontak
               </Link>
             </li>

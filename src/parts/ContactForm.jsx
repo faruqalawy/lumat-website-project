@@ -1,44 +1,43 @@
 import React, { useRef, useState } from "react";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 import Spinner from "../assets/icons/ic_spinner.svg";
-
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     setLoading(true);
 
-    try {
-      // Mengosongkan formulir setelah pengiriman berhasil
-      // Mengirim email
+    // Mendapatkan nilai input
+    const { user_name, user_email, message } = formRef.current.elements;
 
-      sendEmail(e);
+    // Memeriksa apakah ada input yang kosong
+    if (!user_name.value.trim() || !user_email.value.trim() || !message.value.trim()) {
+      setLoading(false);
+      toast.error("Kolom nama, email, dan pesan harus diisi.", {
+        position: "top-center"
+      });
+      return;
+    }
+
+    try {
+      // Mengirim email jika semua input terisi
+      await sendEmail();
     } catch (error) {
       console.error("Error during submission:", error);
-      alert("Terjadi kesalahan saat mengirim formulir. Silakan coba lagi.");
+      toast.error("Terjadi kesalahan saat mengirim formulir. Silakan coba lagi.", {
+        position: "top-center"
+      });
     } finally {
+      setLoading(false);
     }
   };
 
-  // const alert = (props) => (
-  //   <div className=" h-1/6 w-4/5 border border-green-alert-border text-green-alert-text bg-green-alert">
-  //     <h1 className="">
-  //       {props.text}
-  //     </h1>
-  //   </div>
-  // )
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
+  const sendEmail = () => {
+    return emailjs
       .sendForm(
         "service_rmz9ajg",
         "template_owfrqbt",
@@ -47,7 +46,6 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          setLoading(false);
           formRef.current.reset();
           console.log(result.text);
           setTimeout(() => {
@@ -58,10 +56,13 @@ const ContactForm = () => {
         },
         (error) => {
           console.log(error.text);
-          alert("Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.");
+          toast.error("Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.", {
+            position: "top-center"
+          });
         }
       );
   };
+
   return (
     <div className="mx-5 md:mx-12 lg:mx-24 my-6">
       <h1 className="text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
@@ -69,9 +70,7 @@ const ContactForm = () => {
       </h1>
       <form
         ref={formRef}
-        onSubmit={handleSubmit}
-        className=" border-2 border-grey-light flex flex-col gap-2
-       rounded-xl"
+        className="border-2 border-grey-light flex flex-col gap-2 rounded-xl"
       >
         <label htmlFor="name"></label>
         <input
@@ -110,27 +109,25 @@ const ContactForm = () => {
           name="message"
         ></textarea>
 
-        <div className=" w-full flex justify-center mb-4 mt-2 lg:mt-0">
-          {loading ? (
-            <button className="flex justify-center" disabled>
-              <span className="font-600 px-4 md:px-6 lg:px-10 py-5 flex items-center bg-dark-orange text-white rounded-full h-5 md:h-10 lg:h-14 sm:mt-2 lg:mt-4 w-fit font-barlow  font-medium md:text-lg lg:text-2xl">
+        <div className="w-full flex justify-center mb-4 mt-2 lg:mt-0">
+          <button
+            type="button"
+            className="font-600 px-10 md:px-12 lg:px-16 py-5 flex items-center bg-orange hover:bg-dark-orange text-white rounded-full h-5 md:h-10 lg:h-14 sm:mt-2 lg:mt-4 w-fit font-barlow font-medium md:text-lg lg:text-2xl"
+            onClick={handleSubmit}
+          >
+            {loading ? (
+              <span className="flex items-center">
                 <img
                   src={Spinner}
                   alt="spinner"
-                  className=" animate-spin mr-2 md:mr-4 w-3 md:w-6"
+                  className="animate-spin mr-2 md:mr-4 w-3 md:w-6"
                 />
                 LOADING...
               </span>
-            </button>
-          ) : (
-            <button
-              type="submit"
-              className="font-600 px-10 md:px-12 lg:px-16 py-5 flex items-center bg-orange hover:bg-dark-orange text-white rounded-full h-5 md:h-10 lg:h-14 sm:mt-2 lg:mt-4 w-fit font-barlow font-medium md:text-lg lg:text-2xl"
-              onClick={handleSubmit} // fungsi handleSubmit digunakan untuk menangani pengiriman formulir
-            >
-              KIRIM
-            </button>
-          )}
+            ) : (
+              "KIRIM"
+            )}
+          </button>
         </div>
       </form>
       <ToastContainer />

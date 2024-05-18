@@ -11,7 +11,9 @@ const BestProduct = (props) => {
         <img src={props.imageUrl} className="relative" alt={props.name} />
         <div className="absolute inset-x-0 inset-y-0 flex justify-center items-center  bg-black opacity-60 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out">
           <Link to="/product">
-            <p className="cursor-pointer text-white hover:text-yellow">Detail</p>
+            <p className="cursor-pointer text-white hover:text-yellow">
+              Detail
+            </p>
           </Link>
         </div>
       </div>
