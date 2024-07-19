@@ -102,7 +102,7 @@ const ContactForm = () => {
         <label htmlFor="message"></label>
         <textarea
           rows={6}
-          placeholder="Masukan pesan, komentar, atau saran anda di kolom ini"
+          placeholder="Masukan pesan, komentar, atau saran anda di kolom ini (wajib)"
           required
           className="border border-black/25 mx-4 p-3 rounded-xl"
           style={{ borderRadius: 20 }}

@@ -13,7 +13,7 @@ const ProductDetails = ({ isSmallNavOpen }) => {
   };
 
   const carousel = (item) => (
-    <>
+      <>
       {isSmallNavOpen ? (
         <>
           {Object.values(item.images).map((image, index) => (
@@ -33,7 +33,7 @@ const ProductDetails = ({ isSmallNavOpen }) => {
           ))}
         </Carousel>
       )}
-    </>
+    </>                    
   );
 
   const description = (item) => {

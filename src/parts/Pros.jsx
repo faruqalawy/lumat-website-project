@@ -1,5 +1,3 @@
-import React from 'react';
-
 import jsonHome from "../json/home.json";
 
 const Pros = () => {
